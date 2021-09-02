@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+#body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('https://docs.google.com/uc?id=14tSI0kk0n-kMNo-Kmask5zRNcn7sf43u');
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px rgb(48, 231, 24);
+}
+.content h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px blue;
+}
+.introduction{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    border: 2px solid rgb(82, 84, 184);
+    width: 47%;
+    height: 60vh;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 5px 5px rgb(12, 25, 36);
+
+}
+.box1 p{
+    margin:0px 15px 5px 50px;
+    font-size: 22px;
+    text-align: justify;
+}
+.box1{
+    padding-left: 10px;
+    
+}
+.box2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+header{
+    margin:40px 30px 10px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-shadow: 2px 2px gray;
+}
+button{
+
+    box-shadow: 0px 0px 5px 1px rgb(22, 58, 88);
+}
+button a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(0, 153, 77);
+}
+#form{
+    display: flex;
+    width: 100%;
+    height: 750px;
+    /* text-align: center; */
+    justify-content: center;
+    background: linear-gradient(#39578b,#16082c);
+    position: absolute;
+}
+#form img{
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+}
+.images{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+.box3{
+    position: absolute;
+    width: 450px;
+    height: 525px;
+    background: #000;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 5px 5px rgb(33, 32, 82);
+    opacity: .8;
+}
+.box3 h1{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-shadow: 2px 2px blue;
+}
+form label{
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+form input{
+    margin-left: 80px;
+    width: 300px;
+    height: 23px;
+    border-radius: 5px;
+    color: rgb(255, 203, 203);
+    font-size: 18px;
+    font-weight: 500;
+    background: none;
+}
+form textarea{
+    width: 300px;
+    margin-left: 80px;
+    border-radius: 7px;
+    color: rgb(255, 212, 212);
+    font-size: 16px;
+    font-weight: 500;
+    height: 13vh;
+    background: none;
+}
+button{
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: none;
+}
+button:hover{
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(0, 117, 0);
+    color: rgb(255, 255, 255);
+}
+ham{
+    font-size: 25px;
+    
+}
+footer{
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+.footer1st{
+    font-size: 25px;
+}
+.footer2nd{
+    font-size: 20px;
+    color: white;
+}
+.footer2nd a:hover{
+    color: gold;
+}
+
+@media screen and (max-width: 920px) {
+      .box{
+        width: 95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:700px){
+    #body{
+        height: 170vh;
+    }
+    .content h1{
+        font-size: 28px;
+    }
+    .content h2{
+        font-size: 24px;
+    }
+    .introduction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        padding: 0;
+    }
+    .box3 {
+        width: 404px;
+        height: 550px;
+    }
+    form label{
+        margin-left: 30px;
+        font-size:17px ;
+
+    }
+    form input, form textarea{
+        margin-left: 50px;
+    }
+    .footer1st{
+        margin-top: -100px;
+    }
+}
+@media screen and (max-width:410px){
+    .content h1{
+        font-size: 23px;
+    }
+    .content h2{
+        font-size: 19px;
+    }
+    .box1 p{
+        font-size: 15px;
+    }
+    .box3 {
+        width: 300px;
+        height: 550px;
+    }
+    form label{
+        margin-left: 14px;
+        font-size:15px ;
+    }
+    form input, form textarea{
+        margin-left: 40px;
+        width: 70%;
+    }
+    header{
+        font-size: 19px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer1st{
+        font-size: 17px;
+    }
+    .footer2nd{
+        font-size: 16px;
+    }
+    
+    #form img{
+    height: 60vh;
+    }
+
+}
+@media screen and (max-width:340px)
+{
+    .content h1{
+        font-size: 20px;
+    }
+    .content h2{
+        font-size: 16px;
+    }
+    .box3 {
+        width: 250px;
+        height: 500px;
+    }
+    form label{
+        font-size: 14px;
+
+    }
+    .footer1st{
+        font-size: 16px;
+    }
+    .footer2nd{ 
+        font-size: 15px;
+    }
+}
